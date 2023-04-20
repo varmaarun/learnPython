@@ -13,6 +13,10 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+		bat '''
+            	cd C:\\Users\\arunv\\Desktop\\MyBriefcase\\LEARNING\\LearnPython\\
+            	python test.py 
+            	'''
             }
         }
         stage('Deploy') {
