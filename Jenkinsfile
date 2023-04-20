@@ -22,6 +22,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+		bat '''
+            	cd C:\\Users\\arunv\\Desktop\\MyBriefcase\\LEARNING\\LearnPython\\
+            	python deliver.py 
+            	'''
             }
         }
     }
