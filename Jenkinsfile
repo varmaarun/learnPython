@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                bat '''
+            	cd C:\\Users\\arunv\\Desktop\\MyBriefcase\\LEARNING\\LearnPython\\
+            	python build.py 
+            	'''
             }
         }
         stage('Test') {
